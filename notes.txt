@@ -11,3 +11,30 @@
 
 
   _file.scss => is not compile
+
+
+
+  == LINKS ==
+
+  http://demo.patternlab.io/?p=all
+
+
+  == select father ==
+
+  a{
+  	body & {color:red}
+  }
+
+  ==
+
+  .btn{
+  	a{
+  		color:red;
+  	}
+  }
+
+  ==>
+
+  body a{
+  	color:red;
+  }

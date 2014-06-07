@@ -1,3 +1,18 @@
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+h1.class-1 {
+  font-size: 12; }
+
+h1.class-2 {
+  font-size: 14; }
+
+h1.class-3 {
+  font-size: 16; }
+
+h1.class-4 {
+  font-size: 24; }
+
 /*.clearfix::after, clearfix::before{
 	content:"";
 	clear: both;
@@ -17,6 +32,9 @@ main {
   margin-right: auto;
   margin-left: auto; }
 
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
 h1,
 h2,
 h3,
@@ -26,6 +44,9 @@ h6 {
   color: #0000c8;
   font-weight: bold; }
 
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
 .btn {
   color: #0000c8;
   background-color: #eb0000;
@@ -38,3 +59,35 @@ h6 {
     font-size: 2em; }
     .btn.span a {
       color: #eb0000; }
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+header {
+  max-width: 50px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h1 {
+  font-size: 16px;
+  font-size: 1rem;
+  opacity: 0.5;
+  -ms-opacity: 0.5;
+  -o-opacity: 0.5;
+  -webkit-opacity: 0.5; }
+
+h1.class-1 {
+  font-size: 12px;
+  font-size: 1.33333rem; }
+
+h1.class-2 {
+  font-size: 14px;
+  font-size: 1.14286rem; }
+
+h1.class-3 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+h1.class-4 {
+  font-size: 24px;
+  font-size: 0.66667rem; }

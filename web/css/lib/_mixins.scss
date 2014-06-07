@@ -1,0 +1,23 @@
+@mixin max-width($mixin-max_width: 2024px){
+	max-width: $mixin-max_width;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+@mixin font-size($font-size: 16){
+	font-size: $font-size + px;
+	font-size: ($font-size-text / $font-size ) * 1rem;
+
+}
+
+@function clear-unit($value){
+	@return ($value / ($value *0 +1));
+}
+
+@mixin vendors($item,$value){
+	#{$item} : $value;	
+	-ms-#{$item} : $value;
+	-o-#{$item} : $value;
+	-webkit-#{$item} : $value;
+}

@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+nav{
+	ul{
+	@extend %clearfix;
+	}
+}
+
+
+main{
+	@extend %max-width;
+}
+
+header{
+	@include max-width(50px);
+}
+
+
+
+h1{
+	@include font-size(16);
+	@include vendors(opacity,.5);
+}
+
+@for $i from 1 through length($font--sizes){
+	h1.class-#{$i}{
+		@include font-size( nth($font--sizes, $i));
+	}
+}

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+
+$red: rgb(235,0,0);
+$blue: rgb(0,0,200);
+$green: rgb(0,240,0);
+
+
+$corporative-color: $blue;
+
+$header-font-color: $corporative-color;
+$header-font-weight: bold;
+
+$color-text: $red;
+$color-link: $blue;
+
+
+$max-width:1024px;
+
+$font-size-text:16;
+
+
+$font--sizes: 12 14 16 24;
+@for $i from 1 through length($font--sizes){
+	h1.class-#{$i}{
+		font-size: nth($font--sizes, $i);
+	}
+}
+
+
+
+
+
+
