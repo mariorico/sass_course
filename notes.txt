@@ -1,0 +1,13 @@
+ == SASSS classes Notes ==
+
+
+ Prepocessors: They are like a Framework for CSS. We can create variables, objects.
+
+  == 
+
+  50kb => CSS must be revised
+  web tool => sassmeiter
+
+
+
+  _file.scss => is not compile
