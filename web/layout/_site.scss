@@ -1,0 +1,10 @@
+nav{
+	ul{
+	@extend %clearfix;
+	}
+}
+
+
+main{
+	@extend %max-width;
+}

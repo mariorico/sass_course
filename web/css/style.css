@@ -1,0 +1,40 @@
+/*.clearfix::after, clearfix::before{
+	content:"";
+	clear: both;
+}
+
+.clearfix::after{
+	display: table;
+}*/
+nav ul::after, nav ul before {
+  content: "";
+  clear: both; }
+nav ul::after {
+  display: table; }
+
+main {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0000c8;
+  font-weight: bold; }
+
+.btn {
+  color: #0000c8;
+  background-color: #eb0000;
+  line-height: 2;
+  padding-left: .6em;
+  padding-right: .6em; }
+  .btn span {
+    color: #00f000; }
+  .btn.span {
+    font-size: 2em; }
+    .btn.span a {
+      color: #eb0000; }
