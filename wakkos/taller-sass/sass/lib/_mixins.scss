@@ -1,0 +1,44 @@
+@mixin max-width($mixin-max-width : $max-width) {
+	max-width:$mixin-max-width;
+	margin-right:auto;
+	margin-left:auto;
+}
+@mixin font-size($font-size : 16) {
+
+	font-size: $font-size + px;
+	font-size: ($font-size / $tamano-fuente) * 1rem;
+}
+
+@function clear-units($value){
+  @return ($value / ($value * 0 + 1));
+}
+
+@mixin opacity($opacity: 1) {
+    -webkit-opacity: $opacity;
+    -ms-opacity: $opacity;
+    -o-opacity: $opacity;
+    opacity: $opacity;
+}
+
+@mixin vendors($propiedad, $valor) {
+		-webkit-#{$propiedad} : $valor;
+		   -moz-#{$propiedad} : $valor;
+			-ms-#{$propiedad} : $valor;
+			 -o-#{$propiedad} : $valor;
+				#{$propiedad} : $valor;
+}
+
+@mixin fuente-parrafo($font-size : $font-size--small) {
+	@if $font-size == $font-size--big {
+		@include font-size(24);
+	}
+	@else if $font-size == $font-size--small {
+		font-size:12px;
+	}
+	@else if $font-size == $font-size--huge {
+		font-size: 32px;
+	}
+	@else {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+.grid{
+	.grid__item{
+		width:100%;
+		float: left;
+		margin-bottom: 1em;
+		background-color: $blue;
+		@media all and (min-width:  37em){
+				width:49.5%;
+				&:nth-of-type(odd){
+					margin-right: 1%;
+				}
+		}
+	}
+}
+
+.grid__item{
+	>[class*="width-"]{
+		height: 100px;
+		float: left;
+		border:1px solid grey;
+	}
+}
+
+// number of elements in grid
+$spaces :5;
+@for $i from 1 through $spaces{
+	.width-#{$i}{
+		width: ($i * (100 / $spaces)) *1%;
+	}
+}

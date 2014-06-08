@@ -1,0 +1,19 @@
+%color--red {
+	color:$red;
+}
+
+%clearfix {
+	&::after, &::before {
+		content:"";
+		clear:both;
+	}
+	&::after {
+		display:table;
+	}
+}
+
+%max-width {
+	max-width:$max-width;
+	margin-right:auto;
+	margin-left:auto;
+}

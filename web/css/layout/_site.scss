@@ -1,6 +1,9 @@
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+*, *::after,*::before{
+	box-sizing: border-box;
+}
 
 nav{
 	ul{
@@ -25,7 +28,39 @@ h1{
 }
 
 @for $i from 1 through length($font--sizes){
-	h1.class-#{$i}{
+	p.class-#{$i}{
 		@include font-size( nth($font--sizes, $i));
+		background-color: lighten($red, ($i*20));
+	}
+}
+
+
+p.sa{
+
+@include p-font(small);
+color: $red;
+	
+}
+
+@each $raza,$patas,$color in 	(caninus,4,brow)
+								(felinus, 4, white)
+								(mouses,4,grey){
+	.#{$raza}{
+		color: $color;
+		&:after{
+			content:"#{$patas}";
+		}
+	}
+}
+
+@each $encabezado,$margin-bottom,$font-size,$line-height in (h1,1em,24,1.5)
+															(h2,1em,18,1.5)
+															(h3,.8em,18,1.5)
+															(h4,.8em,16,1)
+																			{
+	#{$encabezado},.#{$encabezado}{
+		margin-bottom: $margin-bottom;
+		@include font-size($font-size);
+		line-height: $line-height;
 	}
 }

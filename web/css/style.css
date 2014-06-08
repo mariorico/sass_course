@@ -13,6 +13,9 @@ h1.class-3 {
 h1.class-4 {
   font-size: 24; }
 
+h1.class-5 {
+  font-size: 32; }
+
 /*.clearfix::after, clearfix::before{
 	content:"";
 	clear: both;
@@ -63,6 +66,9 @@ h6 {
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+*, *::after, *::before {
+  box-sizing: border-box; }
+
 header {
   max-width: 50px;
   margin-right: auto;
@@ -76,18 +82,150 @@ h1 {
   -o-opacity: 0.5;
   -webkit-opacity: 0.5; }
 
-h1.class-1 {
+p.class-1 {
   font-size: 12px;
-  font-size: 1.33333rem; }
+  font-size: 1.33333rem;
+  background-color: #ff5252; }
 
-h1.class-2 {
+p.class-2 {
   font-size: 14px;
-  font-size: 1.14286rem; }
+  font-size: 1.14286rem;
+  background-color: #ffb8b8; }
 
-h1.class-3 {
+p.class-3 {
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background-color: white; }
 
-h1.class-4 {
+p.class-4 {
   font-size: 24px;
-  font-size: 0.66667rem; }
+  font-size: 0.66667rem;
+  background-color: white; }
+
+p.class-5 {
+  font-size: 32px;
+  font-size: 0.5rem;
+  background-color: white; }
+
+p.sa {
+  /* Do somthing */
+  font-size: 12px;
+  font-size: 1.33333rem;
+  color: #eb0000; }
+
+.caninus {
+  color: brow; }
+  .caninus:after {
+    content: "4"; }
+
+.felinus {
+  color: white; }
+  .felinus:after {
+    content: "4"; }
+
+.mouses {
+  color: gray; }
+  .mouses:after {
+    content: "4"; }
+
+h1, .h1 {
+  margin-bottom: 1em;
+  font-size: 24px;
+  font-size: 0.66667rem;
+  line-height: 1.5; }
+
+h2, .h2 {
+  margin-bottom: 1em;
+  font-size: 18px;
+  font-size: 0.88889rem;
+  line-height: 1.5; }
+
+h3, .h3 {
+  margin-bottom: 0.8em;
+  font-size: 18px;
+  font-size: 0.88889rem;
+  line-height: 1.5; }
+
+h4, .h4 {
+  margin-bottom: 0.8em;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1; }
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+.grid .grid__item {
+  width: 100%;
+  float: left;
+  margin-bottom: 1em;
+  background-color: #0000c8; }
+  @media all and (min-width: 37em) {
+    .grid .grid__item {
+      width: 49.5%; }
+      .grid .grid__item:nth-of-type(odd) {
+        margin-right: 1%; } }
+
+.grid__item > [class*="width-"] {
+  height: 100px;
+  float: left;
+  border: 1px solid grey; }
+
+.width-1 {
+  width: 20%; }
+
+.width-2 {
+  width: 40%; }
+
+.width-3 {
+  width: 60%; }
+
+.width-4 {
+  width: 80%; }
+
+.width-5 {
+  width: 100%; }
+
+.sprite {
+  width: 58px;
+  height: 48px;
+  background-image: url("../img/flags.png");
+  float: left;
+  border: 1px solid pink;
+  background-position: 0 -5px; }
+
+.sprite--sp {
+  background-position: 0 -58px; }
+
+.sprite--it {
+  background-position: 0 -111px; }
+
+.sprite--fr {
+  background-position: 0 -164px; }
+
+.sprite--de {
+  background-position: 0 -217px; }
+
+.sprite--pt {
+  background-position: 0 -270px; }
+
+.sprite--uk {
+  background-position: 0 -323px; }
+
+.sprite--us {
+  background-position: 0 -376px; }
+
+.sprite--ru {
+  background-position: 0 -429px; }
+
+.sprite--cn {
+  background-position: 0 -482px; }
+
+.sprite--br {
+  background-position: 0 -535px; }
+
+.sprite--kl {
+  background-position: 0 -588px; }
+
+.sprite--ar {
+  background-position: 0 -641px; }

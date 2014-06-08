@@ -1,0 +1,81 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: green;
+  font-weight: bold;
+}
+
+a {
+  color: #0000c8;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+p.class-1 {
+  background-position: 0 1px;
+}
+
+p.class-2 {
+  background-position: 0 2px;
+}
+
+p.class-3 {
+  background-position: 0 3px;
+}
+
+p.class-4 {
+  background-position: 0 4px;
+}
+
+p.class-5 {
+  background-position: 0 5px;
+}
+
+.grid .grid__item {
+  width: 100%;
+  float: left;
+  margin-bottom: 1em;
+  background-color: orange;
+}
+@media all and (min-width: 37em) {
+  .grid .grid__item {
+    width: 49.5%;
+  }
+  .grid .grid__item:nth-of-type(odd) {
+    margin-right: 1%;
+  }
+}
+
+.grid__item > [class*="ancho-"] {
+  height: 100px;
+  float: left;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.ancho-1 {
+  width: 25%;
+}
+
+.ancho-2 {
+  width: 50%;
+}
+
+.ancho-3 {
+  width: 75%;
+}
+
+.ancho-4 {
+  width: 100%;
+}

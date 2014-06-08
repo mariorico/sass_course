@@ -1,0 +1,32 @@
+.grid {
+	.grid__item {
+		width:100%;
+		float: left;
+		margin-bottom: 1em;
+		background-color: orange;
+		@media all and (min-width: 37em) {	
+				width:49.5%;
+				&:nth-of-type(odd) {
+					margin-right:1%;
+				}
+			
+		}
+	}
+}
+
+	.grid__item {
+		> [class*="ancho-"] {
+			height: 100px;
+			float:left;
+			border: 1px solid grey;
+			background-color:white;
+		}
+	}
+	
+	// Cantidad de elementos en el grid
+	$huecos : 4;
+	@for $i from 1 through $huecos {
+		.ancho-#{$i} {
+			width:((100 / $huecos) * $i) *1%;
+		}
+	}

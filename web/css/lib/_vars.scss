@@ -18,15 +18,19 @@ $color-link: $blue;
 
 $max-width:1024px;
 
-$font-size-text:16;
+$font-size        : 16;
+$font-size--small : small;
+$font-size--big   : big;
+$font-size--huge  : huge;
 
-
-$font--sizes: 12 14 16 24;
+$font--sizes: 12 14 16 24 32;
 @for $i from 1 through length($font--sizes){
 	h1.class-#{$i}{
 		font-size: nth($font--sizes, $i);
 	}
 }
+
+$img_flags: "../img/flags.png";
 
 
 

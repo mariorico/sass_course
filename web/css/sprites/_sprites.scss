@@ -1,0 +1,21 @@
+.sprite{
+	width:58px;
+	height: 48px;
+	background-image: url($img_flags);
+	float: left;
+	border:1px solid pink;
+	background-position: 0 -5px;
+}
+
+
+// number of elements in grid
+$flags: sp it fr de pt uk us ru cn br kl ar;
+$flag-height : 48;
+$flag-offset : 5;
+@for $i from 1 through length($flags){
+	$item : nth($flags,$i);
+	$vertical-position : ($flag-offset + (($flag-height + $flag-offset)*$i)) *-1;
+	.sprite--#{$item}{
+		background-position: 0 $vertical-position +px;
+	}
+}

@@ -5,9 +5,9 @@
 }
 
 
-@mixin font-size($font-size: 16){
-	font-size: $font-size + px;
-	font-size: ($font-size-text / $font-size ) * 1rem;
+@mixin font-size($size: 16){
+	font-size: $size + px;
+	font-size: ($font-size / $size ) * 1rem;
 
 }
 
@@ -15,9 +15,29 @@
 	@return ($value / ($value *0 +1));
 }
 
+
+@function cross-multiplication( $value1, $value2 ) {
+  @return ($value1 * $value2) / 100;
+}
+
 @mixin vendors($item,$value){
 	  #{$item}         : $value; 	
 	  -ms-#{$item}     : $value;
 	  -o-#{$item}      : $value;
 	  -webkit-#{$item} : $value;
+}
+
+@mixin p-font($size: $font-size--small ){
+	@if $size == $font-size--small{
+		// something
+		/* Do somthing */
+		@include font-size(12);
+	}@else if  $size == $font-size--big{
+		@include font-size(14);
+	}@else if  $size == $font-size--huge{
+		@include font-size(16);
+	}@else{
+			/* Huge */
+		font-size: 16px;
+	}
 }

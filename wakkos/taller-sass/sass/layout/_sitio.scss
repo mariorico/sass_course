@@ -1,0 +1,14 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+p {
+	@include fuente-parrafo($font-size--big);
+	color:blue;
+}
+
+@for $i from 1 through 5 {
+	p.class-#{$i} {
+		background-position: 0 $i + px;
+	}
+}
