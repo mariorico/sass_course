@@ -16,8 +16,8 @@
 }
 
 @mixin vendors($item,$value){
-	#{$item} : $value;	
-	-ms-#{$item} : $value;
-	-o-#{$item} : $value;
-	-webkit-#{$item} : $value;
+	  #{$item}         : $value; 	
+	  -ms-#{$item}     : $value;
+	  -o-#{$item}      : $value;
+	  -webkit-#{$item} : $value;
 }
